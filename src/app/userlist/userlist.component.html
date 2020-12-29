@@ -1,0 +1,9 @@
+<div class="user-list" *ngFor="let user of user| filter:message ">
+  <div class="user-info">
+    <p>user: {{ user.login }}</p>
+    <p>type: {{ user.type }}</p>
+  </div>
+  <div class="user-image">
+    <img [src]="user.avatar_url" />
+  </div>
+</div>

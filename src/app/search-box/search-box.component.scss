@@ -1,0 +1,15 @@
+input {
+    height: 25px;
+    width: 200px;
+}
+.suggestion{
+    cursor: pointer;
+    height: 30px;
+    width: 200px;
+    vertical-align: baseline;
+    background: #dedede;
+    border: 1px solid;
+}
+.suggestion:hover {
+    background: gray;
+}

@@ -1,0 +1,9 @@
+<div>
+  <input [(ngModel)]="userName"  (focus)="inputfocus=true" (focusout)="focusOut()" (ngModelChange)="updateSearch()">
+  <div  *ngIf="inputfocus">
+    <div *ngFor="let use of user | filter:userName " class="suggestion" (click)="selectUser(use.login)">
+      {{use.login}}
+      </div>  
+  </div>
+ 
+</div>
